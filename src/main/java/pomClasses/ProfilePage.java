@@ -40,9 +40,9 @@ WebDriver driver;
 	private By element = By.xpath("//div[@class='_1QhEVk']");
 	
 	
-	
 	public ProfilePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		
 		this.driver = driver;
 	}
 	
@@ -69,7 +69,6 @@ WebDriver driver;
 		}
 		fullAddress.sendKeys(addressDetails.get(4));
 		saveButton.click();
-		
 	}
 	public int getAddressCount() {
 		return addressElementList.size();
