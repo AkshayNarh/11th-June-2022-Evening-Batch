@@ -42,7 +42,12 @@ WebDriver driver;
 	
 	public ProfilePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-		
+		this.driver = driver;
+	}
+	
+	
+	public ProfilePage(WebDriver driver,WebDriver driver1) {
+		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
 	
