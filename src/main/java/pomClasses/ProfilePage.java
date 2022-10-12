@@ -45,6 +45,12 @@ WebDriver driver;
 		this.driver = driver;
 	}
 	
+	
+	public ProfilePage(WebDriver driver,WebDriver driver1) {
+		PageFactory.initElements(driver, this);
+		this.driver = driver;
+	}
+	
 	public boolean checkUserOnProfilePage() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
